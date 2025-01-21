@@ -113,7 +113,7 @@ li a {
  .cta-button { 
   padding: 10px 20px; /* Fix syntax: space between 10 and px removed */
   border: none;
-  position:fixed;
+  position:absolute;
   top: 7.5px; /* Adjust this to match your menu bar's height */
   right: 20px;
   z-index: 1000;
@@ -124,8 +124,10 @@ li a {
 }
 @media (max-width: 768px) {
   .cta-button {
-    padding: 15px 25px; /* Larger padding for better touch targets */
-    font-size: 18px; /* Increase font size for readability */
+      top: 10px;
+      right: 10px;
+      font-size: 14px;
+      padding: 8px 16px;
   }
 }
 
